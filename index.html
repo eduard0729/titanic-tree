@@ -1,3 +1,54 @@
-<h1>
-	Boss
-</h1>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body class="container">
+
+<h1>Buna!</h1>
+<p>Acesta este un proiect Decision tree learning imbinat cu un proiect de acces la informatii prin API (Framework - Falcon)</p>
+<p>Datele utilizate pentru decision tree learning - <a href="https://www.kaggle.com/c/titanic/data">https://www.kaggle.com/c/titanic/data</a></p>
+<p>Codul sursa - <a href="https://github.com/eduard0729/titanic-tree">https://github.com/eduard0729/titanic-tree</a></p>
+
+<p>Pentru trimiterea unui profil de pasager pe titanic se va acces prin request de tip POST - http://titanic.tekit.ro/predict cu urmatorul json in structura:</p>
+<p>
+  {"PassengerId":	5</br>
+"Pclass": 3</br>
+"Sex": 1 (0 - female, 1 -male)</br>
+"Age":	21</br>
+"SibSp":	0</br>
+"Parch":	0	</br>
+"Fare": 	7.82</br>
+"Embarked": 1</br>
+}</br>
+<p> Se va obtine prin request tot un json </p>
+<p>{</br>
+"Status": "Dead"</br>
+}</br>
+</p>
+
+<h2>Tehnologii utilizate:</h2>
+<p>
+  Decision tree learning: Python 2.x - sklearn, pandas, numpy, matplotlib;</br>
+  API - Python 2.x (Falcon);</br>
+  Prezentare: - HTML + CSS (Bootstrap);</br>
+  Server: Ubuntu 16.04.3 x64 (DigitalOcean), Nginx + Gunicorn</br>
+</p>
+
+<h2>
+  Decision tree map
+</h2>
+<div>
+ <p>
+   <a href="http://titanic.tekit.ro/img/titanic.pdf">Format PDF</a>
+  </p>
+</div>
+
+<h2>Bibliografie:</h2>
+<p><a href="https://www.kaggle.com/c/titanic/data">Kaggle</a></p>
+<p><a href="http://scikit-learn.org/stable/">Sklearn</a></p>
+<p><a href="http://pandas.pydata.org/">Pandas</a></p>
+<p><a href="http://www.numpy.org/">Numpy</a></p>
+<p><a href="https://stackoverflow.com">Stackoverflow</a></p>
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-deploy-falcon-web-applications-with-gunicorn-and-nginx-on-ubuntu-16-04">DigitalOcean</a></p>
+
+  
+</body>

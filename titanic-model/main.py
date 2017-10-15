@@ -24,7 +24,7 @@ train.isnull().sum()
 test.isnull().sum()
 
 train_len= len(train)
-dataset = pd.concat(objs= [train,test],axis=0) #index(drop=True)
+dataset = pd.concat(objs= [train,test],axis=0)
 #Data Exploration
 dataset.head()
 
@@ -77,8 +77,7 @@ graph.render("titanic.png")
 y_pred= clf.predict(x_test1)
 le.fit(y_pred)
 y_pred = le.transform(y_pred)
-print y_pred
-print y_test1
+
 
 submit = pd.DataFrame({'PassengerId':test['PassengerId'],'Survived':y_pred})
 submit.to_csv('titanic.csv',index=False)
