@@ -72,7 +72,7 @@ dot_data = tree.export_graphviz(clf, out_file=None,
                          special_characters=True)  
 
 graph = graphviz.Source(dot_data) 
-graph.render("titanic") 
+graph.render("titanic.png") 
 
 y_pred= clf.predict(x_test1)
 le.fit(y_pred)
